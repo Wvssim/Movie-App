@@ -41,10 +41,22 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    
+    // RecyclerView
+    implementation("androidx.recyclerview:recyclerview:1.3.2")
+    
+    // Network - Volley
+    implementation("com.android.volley:volley:1.2.0")
+    
+    // Image Loading - Glide
+    implementation("com.github.bumptech.glide:glide:4.15.1")
+    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
+    
+    // Google Maps
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    // Ajout des dépendances pour Volley et Glide
-    implementation("com.android.volley:volley:1.2.0")
-    implementation("com.github.bumptech.glide:glide:4.12.0")
 }
